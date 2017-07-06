@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.customcanvas.MainActivity">
+
+    <com.example.dell.customcanvas.DrawCanvas
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/red_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="红色"
+                android:textColor="#ff0000"/>
+            <Button
+                android:id="@+id/green_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="绿色"
+                android:textColor="#00ff00"
+                />
+            <Button
+                android:id="@+id/blue_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:textColor="#0000ff"
+                android:text="蓝色"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/normal_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="普通笔刷"/>
+            <Button
+                android:id="@+id/circle_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="圆形笔刷"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/undo_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="撤销"/>
+            <Button
+                android:id="@+id/redo_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="恢复"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
